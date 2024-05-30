@@ -1,13 +1,13 @@
 function calculateTotalPrice () {
-    let femaleQuantity = parseInt(document.getElementById('female-quantity').value) || 0;
-    let maleQuantity = parseInt(document.getElementById('male-quantity').value) || 0;
+    const femaleQuantity = parseInt(document.getElementById('female-quantity').value) || 0;
+    const maleQuantity = parseInt(document.getElementById('male-quantity').value) || 0;
 
-    let femalePrice = 150.95;
-    let malePrice = 180.95;
+    const femalePrice = 150.95;
+    const malePrice = 180.95;
 
-    let femaleTotal = femaleQuantity * femalePrice;
-    let maleTotal = maleQuantity * malePrice;
-    let orderTotal = femaleTotal + maleTotal;
+    const femaleTotal = femaleQuantity * femalePrice;
+    const maleTotal = maleQuantity * malePrice;
+    const orderTotal = femaleTotal + maleTotal;
 
     document.getElementById('female-total').innerText = `R ${femaleTotal.toFixed(2)}`;
     document.getElementById('male-total').innerText = `R ${maleTotal.toFixed(2)}`;
