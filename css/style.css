@@ -1,0 +1,100 @@
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Anushqa Kandan */
+body {
+    font-family: Arial, sans-serif;
+   
+    width: 60rem;
+}
+main{
+    margin-left: 150px; 
+    border: black 2px solid;
+}
+
+.image-1{
+    height: 350px;
+    width: 150px;
+}
+
+.image-2 {
+    position: absolute;
+    top: 0;
+    left: 31%; 
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 85px;
+    width: 300px;
+}
+
+.navigation {
+    height: 56px;
+    width: 560px;
+    position: absolute;
+    top: 10%; 
+    left: 39%; 
+    transform: translateX(-50%);
+}
+
+caption{
+    color: rgb(51, 128, 228);
+    font-weight: bold;
+}
+
+table{
+    border: black 1px solid; 
+    border-collapse: collapse;
+    position: absolute;
+    top: 20%; 
+    left: 40%; 
+    transform: translateX(-50%);
+    width: 600px;
+    margin-bottom: 20px;
+}
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+tfoot td button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+td a {
+    text-decoration: none;
+    color: blue;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+:is(#male-quantity, #female-quantity){
+    width: 5rem;
+}
+
+.container-fluid{
+  text-align: end;
+   margin-top: 5ems;
+   border-top: grey 2px solid;
+   padding-top: 7ems;
+   width: 98%;
+   margin-left: 1%;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+    <title>Swegga</title>
+</head>
+<body>
+<main>
+    <div class="sidebar">
+        <img class="image-1"
+            src="https://anushqakandan.github.io/All-images/Sweggae/swegga.jpg " alt="profile"
+            loading="lazy">
+
+            
+    </div>
+    <div class="banner"> 
+    <img class="image-2"
+            src="https://anushqakandan.github.io/All-images/Sweggae/delivery.gif " alt="profile"
+            loading="lazy">
+     </div>      
+    <div class="navigation">
+        
+        <img class="image-3"
+                    src="https://anushqakandan.github.io/All-images/Sweggae/links.gif " alt="profile"
+                    loading="lazy">
+
+</div>
+<form action="" id="form">
+    <table class="product-summary">
+        <caption>Product Summary</caption>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Size</th>
+                <th>Colour</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="female.html">Female Ski Jackets</a></td>
+                <td>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="colour" id="colour">
+                        <option value="red">Red</option>
+                        <option value="pink">Pink</option>
+                        <option value="black">Black</option>
+                    </select>
+                </td>
+                <td>150.95</td>
+                <td><input type="number" id="female-quantity" value="2" min="0" oninput="calculateTotal()"></td>
+                <td id="female-total">R 301.90</td>
+            </tr>
+            <tr>
+                <td><a href="male.html">Male Ski Jackets</a></td>
+                <td>
+                    <select name="size" id="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="colour" id="colour">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="white">White</option>
+                    </select>
+                </td>
+                <td>180.95</td>
+                <td><input type="number" id="male-quantity" value="2" min="0" oninput="calculateTotal()"></td>
+                <td id="male-total">R 361.90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Click to confirm and process your order:</td>
+                <td>
+                    <button type="button" onclick="calculateTotal()">Total Price</button>
+                </td>
+                <td id="order-total">R 663.80</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</form>
+
+
+
+<footer class="container-fluid">
+    <div>
+        <p class="bottom">
+            <span>&copy; 2020 Swegga Fashion - Anushqa Kandan</span>
+        </p>
+    </div>
+</footer>
+</main>
+
+    <script src="/script/code.js"></script>
+</body>
+</html>
