@@ -1,17 +1,28 @@
-function calculateTotalPrice () {
-    const femaleQuantity = parseInt(document.getElementById('female-quantity').value) || 0;
-    const maleQuantity = parseInt(document.getElementById('male-quantity').value) || 0;
+let fPrice = document.getElementById('fmalePrice')
+let fQnty = document.getElementById('female-quantity')
+let fTotal = document.getElementById('female-total')
 
-    const femalePrice = 150.95;
-    const malePrice = 180.95;
+let mPrice = document.getElementById('malePrice')
+let mQnty = document.getElementById('male-quantity')
+let mTotal = document.getElementById('male-total')
 
-    const femaleTotal = femaleQuantity * femalePrice;
-    const maleTotal = maleQuantity * malePrice;
-    const orderTotal = femaleTotal + maleTotal;
+let calc = document.getElementById('calculate')
+let Total = document.getElementById('final-total')
 
-    document.getElementById('female-total').innerText = `R ${femaleTotal.toFixed(2)}`;
-    document.getElementById('male-total').innerText = `R ${maleTotal.toFixed(2)}`;
-    document.getElementById('order-total').innerText = `R ${orderTotal.toFixed(2)}`;
+
+calc.addEventListener('click', (event)=>{
+    event.preventDefault()
+    calculation()
+})
+function calculation() {
+   let total1 = eval(fPrice.innerText * fQnty.value)
+   let total2 = eval(mPrice.innerText * mQnty.value)
+   let total3 = total1 + total2
+
+   fTotal.innerText = total1
+   mTotal.innerText = total2
+   Total.innerText = total3.toFixed(2)
+   
+   
+   
 }
-
-document.addEventListener('DOMContentLoaded', calculateTotal);

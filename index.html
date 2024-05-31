@@ -28,9 +28,16 @@
         <img class="image-3"
                     src="https://anushqakandan.github.io/All-images/Sweggae/links.gif " alt="profile"
                     loading="lazy">
+                    <map name="navbarLinks">
+                        <area shape="rect" coords="5,5, 95,35" alt="home" href="index.html">
+                        <area shape="rect" coords="100,5, 190,35" alt="home" href="services.html">
+                        <area shape="rect" coords="201,5, 297,35" alt="home" href="products.html">
+                        <area shape="rect" coords="300,5, 439,35" alt="home" href="orderStatus.html">
+                        <area shape="rect" coords="445,5, 550,35" alt="home" href="ContactUs.html">
+                    </map>
 
 </div>
-<form action="" id="form">
+<form action="order">
     <table class="product-summary">
         <caption>Product Summary</caption>
         <thead>
@@ -60,8 +67,8 @@
                         <option value="black">Black</option>
                     </select>
                 </td>
-                <td>150.95</td>
-                <td><input type="number" id="female-quantity" value="2" min="0" oninput="calculateTotal()"></td>
+                <td id="fmalePrice">150.95</td>
+                <td><input type="number" id="female-quantity" value="2" min="0"></td>
                 <td id="female-total">R 301.90</td>
             </tr>
             <tr>
@@ -80,8 +87,8 @@
                         <option value="white">White</option>
                     </select>
                 </td>
-                <td>180.95</td>
-                <td><input type="number" id="male-quantity" value="2" min="0" oninput="calculateTotal()"></td>
+                <td id="malePrice">180.95</td>
+                <td><input type="number" id="male-quantity" value="2" min="0"></td>
                 <td id="male-total">R 361.90</td>
             </tr>
         </tbody>
@@ -89,9 +96,9 @@
             <tr>
                 <td colspan="4">Click to confirm and process your order:</td>
                 <td>
-                    <button type="button" onclick="calculateTotal()">Total Price</button>
+                    <button id="calculate">Total Price</button>
                 </td>
-                <td id="order-total">R 663.80</td>
+                <td id="final-total">R 663.80</td>
             </tr>
         </tfoot>
     </table>
